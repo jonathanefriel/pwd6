@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Formulir Pendaftaran Lomba</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Formulir Pendaftaran Lomba</h1>
+        
+        <div id="informasi">
+            <form action="" method="post" enctype="multipart/form-data">
+                <h3>Data Tim</h3>
+                <table cellspacing="4" cellpadding="4" border="1" style="border-collapse:collapse; width:100%;">
+                    <tr>
+                        <td style="width: 32%;">
+                            <label for="namatim"><strong>Nama Tim</strong></label>
+                        </td>
+                        <td>
+                            <input type="text" id="namatim" name="namatim" size="30"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 32%;">
+                            <label for="namaketua"><strong>Nama Ketua</strong></label>
+                        </td>
+                        <td>
+                            <input type="text" id="namaketua" name="namaketua" size="30"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 32%;">
+                            <label for="jumlahanggota"><strong>Jumlah Anggota</strong></label>
+                        </td>
+                        <td>
+                            <input type="text" id="jumlahanggota" name="jumlahanggota" size="10"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="prodi"><strong>Program Studi</strong></label>
+                        </td>
+                        <td>
+                            <select id="prodi" name="prodi">
+                                <option>Informatika</option>
+                                <option>Sistem Informasi</option>
+                                <option>Teknik Industri</option>
+                                <option>Manajemen</option>
+                                <option>Akuntansi</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+
+                <h3>Pilihan Lomba</h3>
+                <table cellspacing="4" cellpadding="4" border="1" style="border-collapse:collapse; width:100%;">
+                    <tr>
+                        <td style="width: 32%;">
+                            <label for="kategori"><strong>Kategori Lomba</strong></label>
+                        </td>
+                        <td>
+                            <p>
+                                <input type="radio" id="individu" name="kategori" value="Individu"/>
+                                <label for="individu">Individu</label>
+                            </p>
+                            <p>
+                                <input type="radio" id="kelompok" name="kategori" value="Kelompok"/>
+                                <label for="kelompok">Kelompok</label>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 32%;">
+                            <label for="bidanglomba"><strong>Bidang Lomba</strong></label>
+                        </td>
+                        <td>
+                            <p>
+                                <input type="checkbox" id="program" name="bidanglomba" value="Programming"/>
+                                <label for="program">Programming</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="uiux" name="bidanglomba" value="UI/UX Design"/>
+                                <label for="uiux">UI/UX DESIGN</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="karyatulis" name="bidanglomba" value="Karya Tulis"/>
+                                <label for="karyatulis">Karya Tulis</label>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+
+                <h3>Informasi Karya</h3>
+                <table cellspacing="4" cellpadding="4" border="1" style="border-collapse:collapse; width:100%;">
+                    <tr>
+                        <td style="width: 32%;">
+                            <label for="deskripsikarya"><strong>Deskripsi Karya</strong></label>
+                        </td>
+                        <td>
+                            <textarea id="deskripsikarya" name="deskripsikarya" rows="8" cols="30"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 32%;">
+                            <label for="filekarya"><strong>File Karya</strong></label>
+                        </td>
+                        <td>
+                            <input type="file" id="filekarya" name="filekarya" value="File Karya"
+                            accept="img/gif, img/jpeg, img/png"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <input type="submit" name="daftar" value="Daftar"/>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
